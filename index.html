@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Wallace Portifolio</title>
+</head>
+<body>
+    <header>
+        <div class="barMenu"><i class="fa-solid fa-bars"></i></div>
+        <div class="containerLInk">
+            <ul>
+                <li><a href="#about ">SOBRE</a></li>
+                <li><a href="#projects">PROJETOS</a></li>
+                <li><a href="#contacts">CONTATO</a></li>
+                <span class="closeMenuBar">X</span>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="first-section">
+            <div class="nameAndLinks">
+                <h1>OLÁ, EU SOU <br><span id="spanID" ></span> <br>DESENVOLVEDOR FRONT-END</h1>
+                <div class="boxWithLinks">
+                    <div class="linkSocialMedia">
+                        <i class="fa-brands fa-github"></i>
+                        <a id="github"href="https://github.com/Sansanoski" target="_blank">GITHUB</a>
+                    </div>
+                    <div class="linkSocialMedia">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a id="linkedim" href="https://www.linkedin.com/in/wallace-sansanoski-3b14a1140/" target="_blank">LINKEDIN</a>
+                    </div>
+                </div>
+            </div>
+            <div class="withImg" >
+                <img src="https://www.seventh.com.br/static/work-5d298ead19d24cfe0fa41a925d76135e.svg" alt="Figura ilustrativa de uma pessoa codando">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="divblur"></div>
+            <div class="divCurriculo"> <span id="closeCurriculo">X</span>
+                <img src="cv.png" alt="">
+            </div>
+            <div class="textAbout ">
+                <div class="divH2about">
+                    <h2 class="h2about">SOBRE MIM</h2>
+                </div>
+                <div class="containerInfo">
+                    <p class="sectiontwoP1"> <strong>Santos, São Paulo</strong></p>
+                    <p class="sectiontwoP2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores omnis debitis quis eveniet! Corporis odio quae quidem ipsa, cumque, nobis excepturi soluta delectus sapiente, in cupiditate eveniet eligendi dignissimos dolorum!</p>
+                    <button type="submit" class="resume">CURRICULUM</button>
+                    <h3 class="h3stacks">STACKS</h3>
+                    <div class="skill">
+                        <i class="stacks devicon-css3-plain-wordmark colored animate__animated "></i>
+                        <i class="stacks devicon-html5-plain-wordmark colored animate__animated 3s"></i>
+                        <i class="stacks devicon-github-original-wordmark colored animate__animated "></i>
+                        <i class="stacks devicon-javascript-plain colored animate__animated "></i>
+                        <i class="stacks devicon-postgresql-plain colored  animate__animated "></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="divH2project">PROJETOS</h2>
+            <div class="main-cointainer-projects">
+                <div class="container-projects">
+                    <div class="project">
+                        <img class="imgProject" src="Captura de tela 2022-06-16 235013.png" alt="quiz interativo">
+                        <div class="descriptionOfProject">
+                            <p class="titleOfProject"> <strong>APLICAÇÃO :</strong>QUIZ-INTERATIVO</p>
+                            <p class="description"><strong>DESCRIÇÃO :</strong> JOGO DE PERGUNTAS E RESPOSTAS, COM POTUAÇÃO FINAL</p>
+                            <div class="staksOfProjects"><strong>STACKS USADAS :</strong> HTML, CSS e JAVASCRIPT</div>
+                            <div class="btns-project">
+                                <button class="btn-project"><a href="https://github.com/Sansanoski/Quiz-Interativo" target="_blank">REDME</a></button>
+                                <button class="btn-project"><a href="https://coolquiz.netlify.app" target="_blank">APLICAÇÃO</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-projects">
+                    <div class="project">
+                        <img class="imgProject" src="Captura de tela 2022-06-24 193408 - Copia.png" alt="validacao de form">
+                        <div class="descriptionOfProject">
+                            <p class="titleOfProject"> <strong>APLICAÇÃO :</strong>VALIDAÇÃO DE FORM</p>
+                            <p class="description"><strong>DESCRIÇÃO :</strong>VALIDAÇÃO DE FORMULARIO COM INTERAÇÃO</p>
+                            <div class="staksOfProjects"><strong>STACKS USADAS :</strong> HTML, CSS e JAVASCRIPT</div>
+                            <div class="btns-project">
+                                <button class="btn-project"><a href="https://github.com/Sansanoski/formValidation" target="_blank">REDME</a></button>
+                                <button class="btn-project"><a href="https://validacaoform.netlify.app" target="_blank">APLICAÇÃO</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-projects">
+                    <p class="comeSoon">EM BREVE</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="touch">
+            <div>
+                <h2 class="h2contacts">CONTATOS</h2>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="type-group">
+                        <input type="text" id="name" required>
+                        <label for="name"><i class="fa-solid fa-user"></i>Nome</label>
+                    </div>
+                    <div class="type-group">
+                        <input type="text" id="number" required>
+                        <label for="number"><i class="fa-solid fa-phone"></i> Numero</label>
+                    </div>
+                </div>
+                <div class="type-group">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i>E-mail</label>
+                </div>
+                <div class="type-group">
+                    <textarea type="text" id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fa-solid fa-message"></i>Menssage</label>
+                </div>
+                <button type="submit" class="btnSendMessage"><a href="mailto:mendessansanoski@gmail.com">ENVIAR</a></button>
+            </form>
+        </section>
+    </main>
+    <footer id="contacts">
+        <div class="allInfo">
+            <div class="email">
+                <h5>E-MAIL</h5>
+                <a href="mailto:mendessansanoski@gmail.com">mendessansanoski@gmail.com</a>
+            </div>
+            <div class="socialMedias">
+                <h5>REDE SOCIAL</h5>
+                <div class="containerMedias">
+                    <a  href="https://www.linkedin.com/in/wallace-sansanoski-3b14a1140/" target="_blank"><i class="fa-brands fa-linkedin midia"></i></a>
+                    <a  href="https://github.com/Sansanoski" target="_blank"><i class="fa-brands fa-github midia"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <p><i class="fa-regular fa-copyright"></i>  2022 Desenvolvido por <strong>Wallace Sansanoski</strong>.</p>
+        </div>
+        <div class="getTopPage">&#x27A4;</div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a956664dda.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
