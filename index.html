@@ -12,20 +12,20 @@
 </head>
 <body>
     <header>
-        <div class="barMenu"><i class="fa-solid fa-bars"></i></div>
-        <div class="containerLInk">
-            <ul>
+        <div class="barMenu" data-js="barMeu"><i class="fa-solid fa-bars"></i></div>
+        <div class="containerLInk" data-js="container-lInk">
+            <ul data-js="menu-bar">
                 <li><a href="#about ">SOBRE</a></li>
                 <li><a href="#projects">PROJETOS</a></li>
                 <li><a href="#contacts">CONTATO</a></li>
-                <span class="closeMenuBar">X</span>
+                <span class="closeMenuBar" data-js="closeMenuBar">X</span>
             </ul>
         </div>
     </header>
-    <main>
+    <main data-js="main-container">
         <section class="first-section">
             <div class="nameAndLinks">
-                <h1>OLÁ, EU SOU <br><span id="spanID" ></span> <br>DESENVOLVEDOR FRONT-END</h1>
+                <h1>OLÁ, EU SOU <br><span data-js="introduction-myName" ></span> <br>DESENVOLVEDOR FRONT-END</h1>
                 <div class="boxWithLinks">
                     <div class="linkSocialMedia">
                         <i class="fa-brands fa-github"></i>
@@ -42,8 +42,8 @@
             </div>
         </section>
         <section class="about" id="about">
-            <div class="divblur"></div>
-            <div class="divCurriculo"> <span id="closeCurriculo">X</span>
+            <div class="divblur" data-js="container-blur"></div>
+            <div class="divCurriculo" data-js="container-resume"> <span id="closeCurriculo">X</span>
                 <img src="cv.png" alt="">
             </div>
             <div class="textAbout ">
@@ -53,14 +53,14 @@
                 <div class="containerInfo">
                     <p class="sectiontwoP1"> <strong>Santos, São Paulo</strong></p>
                     <p class="sectiontwoP2">Cursando Análise e Desenvolvimento de Sistemas,sou apaixonado por tecnologia e novos desafios. A curiosidade me impulsiona em aprender e desenvolver coisas novas. E procuro sempre me desenvolver para colaborar com novas propostas. </p>
-                    <button type="submit" class="resume">CURRICULUM</button>
+                    <button type="submit" class="resume" data-js="resume">CURRICULUM</button>
                     <h3 class="h3stacks">STACKS</h3>
                     <div class="skill">
-                        <i class="stacks devicon-css3-plain-wordmark colored animate__animated "></i>
-                        <i class="stacks devicon-html5-plain-wordmark colored animate__animated 3s"></i>
-                        <i class="stacks devicon-github-original-wordmark colored animate__animated "></i>
-                        <i class="stacks devicon-javascript-plain colored animate__animated "></i>
-                        <i class="stacks devicon-postgresql-plain colored  animate__animated "></i>
+                        <i data-js="iconStack" class="stacks devicon-css3-plain-wordmark colored animate__animated "></i>
+                        <i data-js="iconStack" class="stacks devicon-html5-plain-wordmark colored animate__animated 3s"></i>
+                        <i data-js="iconStack" class="stacks devicon-github-original-wordmark colored animate__animated "></i>
+                        <i data-js="iconStack" class="stacks devicon-javascript-plain colored animate__animated "></i>
+                        <i data-js="iconStack" class="stacks devicon-postgresql-plain colored  animate__animated "></i>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
         <div class="credits">
             <p><i class="fa-regular fa-copyright"></i>  2022 Desenvolvido por <strong>Wallace Sansanoski</strong>.</p>
         </div>
-        <div class="getTopPage">&#x27A4;</div>
+        <div data-js="icon-to-up-and-down">&#x27A4;</div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a956664dda.js" crossorigin="anonymous"></script>
