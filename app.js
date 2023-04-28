@@ -1,6 +1,5 @@
-let spanText = document.querySelector('[data-js="introduction-myName"]')
 const buttonGoTopPage = document.querySelector('[data-js="icon-to-up-and-down"]')
-const barMenu =document.querySelector('[ data-js="barMeu"]')
+const barMenu =  document.querySelector('[ data-js="barMeu"]')
 const stacksIcon = document.querySelectorAll('[data-js="iconStack"]')
 const ULMenuBar = document.querySelector('[data-js="menu-bar"]')
 const containerLinks = document.querySelector('[data-js="container-lInk"]')
@@ -9,6 +8,8 @@ const getResume= document.querySelector('[data-js="resume"]')
 const divBlur = document.querySelector('[data-js="container-blur"]')
 const divCurriculo = document.querySelector('[data-js="container-resume"]')
 const mainContainer = document.querySelector('[data-js="main-container"]')
+
+let spanText = document.querySelector('[data-js="introduction-myName"]')
 
 const  logIntroductionIntoScreen = (text, counter) => {
 
@@ -22,7 +23,7 @@ const  logIntroductionIntoScreen = (text, counter) => {
     }, 70)
   }
 }
-  logIntroductionIntoScreen('WALLACE SANSANOSKI', 0)
+logIntroductionIntoScreen('WALLACE SANSANOSKI', 0)
 
 
 const closeBarMenu = event => {
@@ -84,9 +85,7 @@ const idSetinterval = setInterval(() => {
   const insertAnimationClassIntoICON = item => {
     item.classList.toggle('animate__bounce')
   }
-
   stacksIcon.forEach(insertAnimationClassIntoICON)
-
   stopAnimationIconStack(idSetinterval)
 
 }, 1000)
@@ -99,7 +98,7 @@ const showResumeIntoScreen = () => {
 const hideResumeIntoScreen = event => {
   
   const clickedElement = event.target.tagName
-  const isElementCliked = clickedElement === 'DIV'|| clickedElement === 'SPAN'||clickedElement === 'IMG'
+  const isElementCliked = ['DIV', 'SPAN', 'IMG'].includes(clickedElement)
   
   if(isElementCliked){
     divCurriculo.style.display ='none'
