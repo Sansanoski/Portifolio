@@ -11,18 +11,26 @@ const mainContainer = document.querySelector('[data-js="main-container"]')
 
 let spanText = document.querySelector('[data-js="introduction-myName"]')
 
+
 const  logIntroductionIntoScreen = (text, counter) => {
 
-  const isCounterMorethanTextLength = counter < text.length
+  const isCounterMorethanTextLength = counter > text.length
 
-  if(isCounterMorethanTextLength) {
-    setTimeout(() => {
-      spanText.textContent += text.charAt(counter)
-      counter++
-      logIntroductionIntoScreen(text, counter)
-    }, 70)
+  const clearSetIntervalID = setTimeout(() => {
+    spanText.textContent += text.charAt(counter)
+    counter++
+    logIntroductionIntoScreen(text, counter)
+  }, 150)
+
+  if(isCounterMorethanTextLength){
+    clearTimeout(clearSetIntervalID)
+    counter = 0
+    spanText.textContent  = ''
+    logIntroductionIntoScreen(text, counter)
   }
+
 }
+
 logIntroductionIntoScreen('WALLACE SANSANOSKI', 0)
 
 
